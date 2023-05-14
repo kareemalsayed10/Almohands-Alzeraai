@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المستخدم</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        header span:hover {
+            cursor: pointer;
+        }
+
+        header nav:nth-child(1) img {
+            width: 46px;
+            height: 46px
+        }
+
+        nav img {
+            width: 30px;
+            height: 30px
+        }
+
+        header nav:nth-child(1) .search-add {
+            width: 610px;
+        }
+
+        header .search-add {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .search-add input {
+            width: 450px;
+        }
+
+        .mobile-nav-search-bar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        /*truncate on news page*/
+        .card .card-title.truncate {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        .card .card-subtitle.truncate {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <header>
+        <!--     pc screen nav -->
+        <nav class="navbar  navbar-expand-md navbar-light bg-white">
+            <div class="container-lg">
+                <a href="../index.html" class="navbar-brand"><img src="../images/pngegg.png" alt="logo"></a>
+
+                <div class="search-add d-none d-md-flex align-items-center">
+                    <form action="" class="d-block">
+                        <input type="search" class="form-control bg-light" placeholder="ابحث">
+                    </form>
+                </div>
+
+                <div>
+
+                    <!--           mobile screen search btn -->
+                    <span class="fs-4  d-md-none text-secondary" data-bs-toggle="mobile-search" aria-expanded="false"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+
+                    <!--           mobile-screen btn for profile dropdown -->
+                    <span class="ms-4  d-md-none fs-4 text-secondary" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-solid fa-user"></i></span>
+
+                    <!--           profile dropdown trigger and menu -->
+                    <div class="btn-group">
+                        <div class="" alt="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fw-bold d-none d-xl-inline nav-item dropdown">كريم السيد</span>
+                            <img src="../images/user.png"
+                                class="border border-dark rounded-circle object-fit-cover ms-3 d-none d-md-inline-block"
+                                alt="">
+                        </div>
+
+                        <!--             dropdown menu -->
+                        <ul class="dropdown-menu dropdown-menu-end mt-3 mt-md-2">
+                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="#">تسجيل دخول</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">تسجيل خروج</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--     mobile-screen nav panel -->
+        <nav
+            class="low-nav fixed-bottom navbar navbar-expand navbar-light bg-white d-md-none fs-4 border border-top py-1">
+            <div class="container-fluid d-block ">
+                <ul class="navbar-nav justify-content-around align-items-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-dark border-secondary px-3 py-1"><i
+                                class="fa-regular fa-plus"></i></button>
+                    </li>
+                    <li class="nav-item">
+                        <img src="../images/user.png" class="border border-dark rounded-circle object-fit-cover" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container-fluid px-md-0 py-2 mx-auto" style="max-width: 610px">
+
+            <!--       profile card -->
+            <div class="card">
+                <div class="card-body">
+                    <!--           profile avatar -->
+                    <div class="ratio ratio-1x1 rounded-circle border border-dark border-3 overflow-hidden mx-auto mb-3"
+                        style="width: 35%">
+                        <img src="../images/user.png"
+                            class="object-fit-cover" alt="Raeesh">
+                    </div>
+
+                    <!--           profile username and edit btn -->
+                    <div class="text-center mb-4">
+                        <h5 class="card-title mb-3 px-3">@كريم السيد</h5>
+                        <button class="btn btn-outline-dark px-5 ">تعديل الحساب </button>
+                    </div>
+
+                    <!--           profile full info -->
+                    <div class="profile-details bg-light border text-center text-sm-start rounded p-3">
+                        <div class="row mb-2">
+                            <span class="col-sm-3 fw-semibold"> الاسم كامل</span>
+                            <span class="col-sm-9">كريم السيد</span>
+                        </div>
+
+                        <div class="row mb-2">
+                            <span class="col-sm-3 fw-semibold">البريد الالكترونى</span>
+                            <span class="col-sm-9">kareem12@gmail.com</span>
+                        </div>
+
+                        <div class="row mb-2">
+                            <span class="col-sm-3 fw-semibold">البلد</span>
+                            <span class="col-sm-9">سوهاج</span>
+                        </div>
+
+                        <div class="row text-primary-emphasis">
+                            <span class="col-sm-3 fw-semibold">مسجل</span>
+                            <span class="col-sm-9">10.05.2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--       add post modal trigger -->
+            <div class="card mt-3 text-center">
+                <div class="card-body">
+                    <button class="btn btn-success px-5 py-2 fw-semibold" type="button" data-bs-toggle="modal"
+                        data-bs-target="#addPostModal">اعلان وظيفة </button>
+                    <button class="btn btn-success px-5 py-2 fw-semibold" type="button" data-bs-toggle="modal"
+                        data-bs-target="#addPostModal"> ملفاتى </button>
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5a484eabe9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

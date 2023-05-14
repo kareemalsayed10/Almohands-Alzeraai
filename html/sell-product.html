@@ -27,12 +27,10 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>اضافة مشكلة</title>
+    <title>بيع منتج</title>
 </head>
 
 <body>
-
-
     <!--Start Header-->
     <header>
         <!--Start navbar-->
@@ -43,8 +41,7 @@
             </div>
         </nav>
         <!--End navbar-->
-
-        <h1> اضافة مشكلة </h1>
+        <h1> بيع منتج </h1>
     </header>
     <!--End Header-->
 
@@ -53,8 +50,10 @@
     <div class="problem-container">
         <div class="problem-container-data">
             <div class=" mb-3 mt-5">
-                <label for="" class="form-label" style="font-family: Amiri, serif;">وصف المشكلة</label>
-                <textarea class="form-control" placeholder="اكتب وصف المشكلة ...." aria-label="With textarea"></textarea>
+                <label for="" class="form-label" style="font-family: Amiri, serif;">نوع المنتج </label>
+
+                <input type="text" placeholder="نوع المحصول " class="form-control"
+                    aria-label="Amount (to the nearest dollar)">
             </div>
 
             <div class=" mb-3">
@@ -63,29 +62,30 @@
             </div>
 
             <div class=" mb-3">
-                <label for="" class="form-label" style="font-family: Amiri, serif;">السعر المدفوع </label>
+                <label for="" class="form-label" style="font-family: Amiri, serif;">سعر المنتج </label>
 
-                <input type="text" placeholder="اكتب سعر" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" placeholder="اكتب سعر" class="form-control"
+                    aria-label="Amount (to the nearest dollar)">
             </div>
-
             <div class=" mb-3">
-                <label for="inputGroupFile02" class="form-label" style="font-family: Amiri, serif;">صورة المشكلة</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
-
+                <label for="" class="form-label" style="font-family: Amiri, serif;">الكمية </label>
+                <input type="number" class="form-control" placeholder="الكمية " aria-label="phone-number">
             </div>
 
-
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                    <h3>اختار صورة المنتج</h3>
+                </div>
+            </div>
         </div>
-
-
     </div>
 
     <!--End problem body-->
-  <!--Start Footer-->
-  <footer>
-    <a class="bn47" style="font-family: Amiri, serif;" href="/"> نشر</a>
-
-</footer>
+    <!--Start Footer-->
+    <footer>
+        <a class="bn47" style="font-family: Amiri, serif;" href="/"> نشر</a>
+    </footer>
     <!--End Footer-->
 
     <!--bootstrap-->

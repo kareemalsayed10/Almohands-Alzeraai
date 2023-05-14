@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
     <!--bootStrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,6 +22,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@500&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <!--CSS file-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -27,7 +32,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>اضافة مشكلة</title>
+    <title>اعرف ربحك</title>
 </head>
 
 <body>
@@ -44,49 +49,39 @@
         </nav>
         <!--End navbar-->
 
-        <h1> اضافة مشكلة </h1>
+        <h1> اعرف ربحك </h1>
+
+
     </header>
     <!--End Header-->
 
-    <!--start problem body-->
-
-    <div class="problem-container">
-        <div class="problem-container-data">
-            <div class=" mb-3 mt-5">
-                <label for="" class="form-label" style="font-family: Amiri, serif;">وصف المشكلة</label>
-                <textarea class="form-control" placeholder="اكتب وصف المشكلة ...." aria-label="With textarea"></textarea>
+    <div class="profit-container">
+        <div class="dropdown">
+            <button class="dropbtn">اعرف ربحك</button>
+            <div class="dropdown-content">
+              <a href="#">طماطم</a>
+              <a href="#">خيار</a>
+              <a href="#">قطن</a>
+              <a href="#">فول صويا</a>
+              <a href="#">بطاطس</a>
+              <a href="#">بصل</a>
+              <a href="#">ثوم</a>
+              <a href="#">سمسم</a>
+              <a href="#">فلفل</a>
+              <a href="#">كوسه</a>
+              <a href="#">ذره شاميه</a>
+              <a href="#">ذره رفيعه</a>
+              <a href="#">قمح</a>
+              <a href="#">فول سوداني</a>
+              <a href="#">فول بلدي</a>
+              <a href="#">بطيخ</a>
             </div>
-
-            <div class=" mb-3">
-                <label for="" class="form-label" style="font-family: Amiri, serif;">رقم الهاتف </label>
-                <input type="number" class="form-control" placeholder="رقم الهاتف" aria-label="phone-number">
-            </div>
-
-            <div class=" mb-3">
-                <label for="" class="form-label" style="font-family: Amiri, serif;">السعر المدفوع </label>
-
-                <input type="text" placeholder="اكتب سعر" class="form-control" aria-label="Amount (to the nearest dollar)">
-            </div>
-
-            <div class=" mb-3">
-                <label for="inputGroupFile02" class="form-label" style="font-family: Amiri, serif;">صورة المشكلة</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
-
-            </div>
-
-
-        </div>
-
-
+          </div>
     </div>
 
-    <!--End problem body-->
-  <!--Start Footer-->
-  <footer>
-    <a class="bn47" style="font-family: Amiri, serif;" href="/"> نشر</a>
 
-</footer>
-    <!--End Footer-->
+
+
 
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
